@@ -32,21 +32,21 @@ usage: elixir-install [OPTIONS] [ELIXIR] [VERSION] [-- CONFIGURE_OPTS ...]]
 
 Options:
 
-  -e, --elixirs-dir   DIR Directory that contains other installed Elixirs
-  -i, --install-dir   DIR Directory to install Elixir into
-      --prefix DIR    Alias for -i DIR
-  -s, --src-dir DIR   Directory to download source-code into
-  -c, --cleanup       Remove archive and unpacked source-code after installation
-  --no-reinstall      Skip installation if another Elixir is detected in same location
-  -L, --latest        Downloads the latest Elixir versions
-  -V, --version       Prints the version
-  -h, --help          Prints this message
+  -e, --elixirs-dir DIR   Directory that contains other installed Elixirs
+  -i, --install-dir DIR   Directory to install Elixir into
+      --prefix DIR        Alias for -i DIR
+  -s, --src-dir DIR       Directory to download source-code into
+  -c, --cleanup           Remove archive and unpacked source-code after installation
+  --no-reinstall          Skip installation if another Elixir is detected in same location
+  -L, --latest            Downloads the latest Elixir versions
+  -V, --version           Prints the version
+  -h, --help              Prints this message
 
 Examples:
 
   $ elixir-install elixir
-  $ elixir-install elixir 2.3
-  $ elixir-install elixir 2.3.0
+  $ elixir-install elixir 1.2
+  $ elixir-install elixir 1.2.0
 
 USAGE
 }
