@@ -3,7 +3,7 @@
 source "$elixir_install_dir/versions.sh"
 
 elixir_versions_url="https://raw.githubusercontent.com/facto/elixir-versions/master"
-elixir_versions_files=({versions}.txt)
+elixir_versions_files=(versions.txt)
 
 #
 # Determines if the elixir-versions files are missing for a elixir.
@@ -88,6 +88,16 @@ function is_known_elixir_version()
   local version="$2"
 
   is_known_version "$elixir_install_cache_dir/$elixir/versions.txt" "$version"
+}
+
+#
+# Lists all current versions.
+#
+function elixir_versions()
+{
+	local elixir="$1"
+
+	cat "$elixir_install_cache_dir/$elixir/versions.txt"
 }
 
 #
