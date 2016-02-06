@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-elixir_version_family="${elixir_version:0:3}"
-elixir_archive="elixir-$elixir_version.tar.bz2"
+elixir_archive="v$elixir_version.tar.gz"
 elixir_dir_name="elixir-$elixir_version"
-# elixir_url="${elixir_url:-$elixir_mirror/$elixir_version_family/$elixir_archive}"
+elixir_mirror="${elixir_mirror:-https://github.com/elixir-lang/elixir/archive}"
+elixir_url="${elixir_url:-$elixir_mirror/$elixir_archive}"
 
 #
 # Cleans Elixir.
